@@ -1,0 +1,56 @@
+public class Week2 {
+    public static void main(String[] args) {
+        String Alive = "You are still alive!";
+
+        final double PIE = 3.141529;
+
+        int fiddy = 5;
+
+        int fiddyfive = (fiddy * 5 * 2 + 5);
+        System.out.println(Alive);
+        System.out.println(PIE);
+        System.out.println(fiddyfive);
+
+        byte bigByte = 127; // Max 127, min -128 //
+        short bigShort = 32767; // Max 21767. -32768 //
+        int bigInt = 21000000; // Just big //
+        long bigLong = 922000000000000L; // must end with L //
+        float bigFloat = 3.14F; // must end with F, smalls decs //
+        double bigDouble = 3.1457473585849575; // huge decimals //
+        boolean trueOrFalse = true;
+        char firstChar = 67;
+        char secondChar = 'P';
+        char escapeChars = '\\'; // \r \f \b \n \t \" \' //
+        System.out.println(Float.MAX_VALUE);
+        System.out.println(Double.MAX_VALUE);
+        System.out.println(firstChar);
+    }
+}
+////////////////////// STRINGS //////////////////////
+class Slinky {
+    public static void main(String[] args) {
+        byte bigByte = 127;
+        String halfJoke1 = "Knock, Knock... ";
+        String halfJoke2 = "Who's there?";
+        String Alive = "That alive person!";
+        // Add strings together //
+        String joke = halfJoke1 + halfJoke2;
+
+        System.out.println(joke);
+        System.out.println(Alive);
+
+        /////////////// CONVERT /////////////
+        String byteString = Byte.toString(bigByte);
+        System.out.println(byteString);
+        double doubleValue = 6.9817374345;
+        float doubleTofloat = (float) doubleValue;
+        System.out.println(doubleTofloat);
+        int floatToInt = (int) doubleTofloat;
+        System.out.println(floatToInt);
+        double massDouble = (double) doubleTofloat*888998.8;
+        System.out.println(massDouble);
+
+        byte stringToByte = Byte.parseByte(byteString);
+        System.out.println(stringToByte);
+    }
+}
