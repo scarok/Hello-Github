@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class InputOutput {
+    static Scanner userInput = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        System.out.print("What is your IQ? ");
+        if (userInput.hasNextInt()) {
+
+
+            int iqEntered = userInput.nextInt();
+            int quiz = (4 - 8 % 3 + -10);
+            int numberABS = Math.abs(iqEntered);
+            int randomNum = (int) (Math.random()* 50);
+            System.out.println("The random number is  " + randomNum);
+            System.out.println("Your IQ is " + iqEntered);
+            } else {
+            System.out.println("Ummm.... Duhhhh");
+        }
+    }
+}
