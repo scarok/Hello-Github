@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class Module2 {
+    static Scanner userinput = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        System.out.println("Enter value for x: ");
+                int valueX = userinput.nextInt();
+        System.out.println("Enter value for y: ");
+               int valueY = userinput.nextInt();
+        System.out.print("Answer = " + valueX * valueY);
